@@ -1,0 +1,20 @@
+/*
+
+Original gridlayout that practiced with
+Learnt this from treehouse video
+*/
+
+#staff {
+    display:grid;
+    max-width: 100%;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 5px;
+}
+
+
+nav {
+    display:grid;
+    max-width: 100%;
+    grid-template-columns: 4fr minmax(218px, 1fr);
+}
+

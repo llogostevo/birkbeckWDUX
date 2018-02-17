@@ -1,0 +1,148 @@
+
+/* ******************* */
+/* sitewide CSS        */
+/* ******************* */
+
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+body {
+    margin: 0;
+    border:0;
+}
+
+/* ******************* */
+/* header              */
+/* ******************* */
+
+#banner {
+    margin: 40px auto;
+}
+
+
+/* ******************* */
+/* Navigiation         */
+/* ******************* */
+
+/* this is supposed to get the navigation to stick at the top, but it keeps getting pushed out of the way? */
+nav {
+    position: sticky;
+    top:0;
+}
+#sitenav a {
+    text-decoration: none;
+    color: white;
+    /* used inherit to ensure the hyperlink covered the whole button, not just the text itself */
+    padding: inherit;
+    
+}
+
+#sitenav ul {
+    background: black;
+    padding: 15px;
+}
+#sitenav ul li {
+    
+    padding: 15px;
+     /* originally used background image, realised this would impact on file load times
+    background-image: url(images/darktolightimage.png);
+    altered to gradient
+    */
+    background: black;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    display: inline;
+}
+
+/* selecting the hover for all the buttons but not the form for searching the site */
+#sitenav ul li:not(#searchsite):hover {
+    background: rgb(43, 78, 89);
+    color:white;
+    cursor:pointer;
+}
+
+/* how can i get this to be on the far right and then push towards menu bar as site gets smaller? tried float right but then had a few issues so went back to this */
+
+#search {
+    border-radius: 25px;
+    border-style: solid;
+    margin-left: 250px;
+}
+
+nav form {
+    display:inherit;
+}
+
+/* ******************* */
+/* staff photo section */
+/* ******************* */
+#staff img {
+    
+    border: 2px solid rgb(90, 111, 100);
+    border-radius: 25px;
+    width: 200px;
+}
+
+/* used to centre the images in staff on homepage */
+.middlecontent {
+    text-align: center;
+}
+
+/* used to give a gradient colour as a background to the staff section */
+/* source : https://www.w3schools.com/css/css3_gradients.asp */
+
+#staff {
+    
+    background: rgb(205, 199, 204);
+    padding: 50px;
+}
+/* 
+original colour choice for image background, changed from this because i didn't like the lack of symmetry
+.grad_grey_black {
+  background: black; /* For browsers that do not support gradients 
+  background: -webkit-linear-gradient(-45deg, black, white); /* For Safari 5.1 to 6.0 
+  background: -o-linear-gradient(-45deg, black, white); /* For Opera 11.1 to 12.0 
+  background: -moz-linear-gradient(-45deg, black, white); /* For Firefox 3.6 to 15 
+  background: linear-gradient(-45deg, white, black); /* Standard syntax 
+} 
+
+
+/* ******************* */
+/* signup section      */
+/* ******************* */
+
+#signup {
+    /* originally used background image, realised this would impact on file load times
+    background-image: url(images/darktolightimage.png);
+    altered to gradient
+    */
+    background: linear-gradient(-40deg, rgb(41, 76, 87), rgb(208, 192, 132));
+    padding: 100px;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+.regularbutton {
+    
+    border: 5px solid black;
+    border-radius: 25px;
+    padding: 5px;
+    margin: auto;
+    background: darkgreen; /* For browsers that do not support gradients */
+    background:linear-gradient(-45deg, rgb(41, 76, 87), rgb(208, 192, 132));
+    color: white;
+    width: 200px;
+    display: block;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+.regularbutton:hover {
+    background: black;
+    cursor:pointer;
+}

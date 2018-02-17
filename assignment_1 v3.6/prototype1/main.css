@@ -1,0 +1,455 @@
+
+/* ******************* */
+/* sitewide CSS        */
+/* ******************* */
+
+
+body {
+    margin: 5px 0;
+    border:0;
+    font-family: 'Montserrat', sans-serif;
+}
+section {
+    border-bottom-color: black;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+}
+/* ******************* */
+/* header              */
+/* ******************* */
+
+
+#banner {
+    margin: 40px auto;
+    text-align: center;
+}
+
+
+/* ******************* */
+/* General Navigiation */
+/* ******************* */
+
+nav{
+    background: white;
+    font-variant-caps:titling-caps;
+    font-size:1em;
+    
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    
+}
+
+nav ul {
+    background: white;
+    margin:0;
+}
+
+nav ul li {
+     text-align: center;
+     display: inline;
+}
+
+nav ul li a:hover {
+    cursor:pointer;
+    text-decoration: underline;
+}
+
+/* *********************** */
+/* Current User navigation */
+/* *********************** */
+
+#currentuser {
+    text-align: right;
+    font-size:0.9em;
+}
+#currentuser ul, #currentuser ul li, #currentuser a {
+    padding: 5px;
+}
+
+
+/* ******************* */
+/* Page Grid     
+
+this needs organising as it makes no sense currently */
+/* ******************* */
+
+#pagegrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#pagegrid header, section, footer {
+    grid-column: 1 / 3;
+}
+
+/* ******************* */
+/* Site Navigation     */
+/* ******************* */
+
+/* padding applied to ensure the link matches size of roll over area */
+#sitenav ul, #sitenav ul li {
+    padding: 15px;
+}
+
+#sitenav {
+    display: grid;
+    border-bottom: 5px solid black;
+    grid-template-columns: 4fr 1fr;
+    position: sticky;
+    top: 0px;
+}
+
+#apply-nav {
+    text-align: right;
+}
+
+.call-to-action-button {
+     background:linear-gradient(-45deg, #0575E6, #43C6AC);
+    color: white;
+    padding: 10px;
+    border-radius:5px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.call-to-action-button:hover {
+    text-decoration: underline;
+}
+
+/* ******************* */
+/* siteintro section   */
+/* ******************* */
+
+#siteintro {
+    background: black;
+    background-image: url(images/oldstreetroundabout.png);
+    /* incase image doesn't show so text is still viewable */
+    background-size: cover;
+    background-position: top;
+    color: white;
+    height:60vh;
+    text-align: center;
+}
+#siteintro strong, #siteintro em {
+    display: block;
+    margin: auto;
+}
+
+#siteintro em {
+    padding-bottom: 20px;
+}
+    
+
+#siteintro h1 {
+    font-size: 3em;
+    padding: 50px;
+    margin: 0;
+    text-align:left;
+}
+
+/* ******************* */
+/* about section        */
+/* ******************* */
+
+#about{
+    border: 1px solid black;
+}
+
+#about h1 {
+    text-align: center;
+    font-size: 3em;
+}
+
+#staff {
+    
+    display: grid;
+    grid-template-columns: repeat(3,minmax(205px, 1fr));
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 50px;
+    margin: 50px;
+}
+
+#map iframe {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.staff-image, #map {
+    display:grid;
+    grid-template-rows: 205px 40px;
+    grid-gap: 20px;
+}
+
+.staff-image img {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.staff-text, #map-iframe {
+    margin: 0 auto;
+}
+
+/* taken from w3schools 
+https://www.w3schools.com/css/tryit.asp?filename=trycss_tooltip
+
+adjusted this slightly so that it appeared at bottom of image
+
+I want to use this to provide a roll over to announce who it is, need to get it positioned properly. 
+*/
+/*
+.tooltip {
+    display: inline-grid;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 65%;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    font-size: 1em;
+
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+*/
+
+
+/* ******************* */
+/* news section        */
+/* ******************* */
+
+#news-section{
+    background: black;
+}
+#news img {
+    width: 200px;
+}
+
+#news {
+    
+    display: grid;
+/*    padding: 50px;*/
+    
+    grid-gap: 0px;
+    /* set four columns using the repeat function, the minium size will be 250px the max size will be fill the browser space */
+    grid-template-columns: repeat(4, minmax(200px, 1fr ));
+    grid-template-rows: 145px repeat(3,  200px);
+}
+
+/* selects all the div items the direct descendent of id news apart from the div with id "item0" */
+#news>div:not(#item0){
+    border:black;
+    border-style: solid;
+    border-width: 1px;
+}
+
+#news>div:hover:not(#item0) {
+    opacity: 0.6;
+}
+
+#item0{
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+#item0 h1 {
+    text-align: right;
+    font-size: 3em;
+    padding:50px;
+    color:white;
+    margin: 0;
+}
+
+#item1 {
+    background-image: url(images/Salesforce.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#item2 {
+    background-image: url(images/imac.png);
+    background-size: cover;
+    background-position: center;
+}
+#item3 {
+background-image: url(images/imac.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#item4 {
+    background-image: url(images/NLA.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#item5 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    background-image: url(http://static2.businessinsider.com/image/54b66a4fdd089537298b4604/google-is-moving-2500-staff-into-a-new-london-office-with-a-running-track.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#item6 {
+    background-image: url(images/darktolightimage.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#item7 {
+    grid-column: 2 / 4;
+    background-image: url(http://media.corporate-ir.net/media_files/IROL/17/176060/img/logos/amazon_logo_RGB.jpg);
+}
+
+#item8 {
+    background-image: url(images/imac.png);
+    background-size: cover;
+}
+
+.newsgrid {
+    display:grid;
+    grid-template-rows: 2fr 1fr;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+
+.newsitem {
+    grid-column: 1 / 7;
+    align-self: center;
+    margin: 0 25px;
+}
+
+#google {
+    
+    grid-column: 4 / 6;
+    grid-row: 2;
+}
+
+.newsbutton {
+    grid-column: 1;
+    grid-row: 2;
+    align-self: end;
+    margin: 0 0 5px 5px;
+}
+
+.newsbutton a {
+    border: 5px solid;
+    border-radius: 25px;
+    padding: 5px;
+    background:linear-gradient(-45deg, rgb(41, 76, 87), rgb(208, 192, 132));
+    color: black;
+    font-size: 1em;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    width:100px;
+}
+
+.newsbutton a:hover {
+    border: 5px solid black;
+    background: black;
+    color:white;
+    cursor:pointer;
+}
+
+#more-news{
+    margin:10px;
+}
+
+/* ********************* */
+/* sign up form          */
+/* ********************* */
+
+#sign-up {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.left {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+}
+
+#sign-up-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background:linear-gradient(-45deg, #0575E6, #43C6AC);
+    width: 50%;
+    margin: auto;
+    border-radius: 5px;
+    padding: 25px;
+}
+
+/* need to fix the labels */
+form div *:not(label)  {
+    border-radius: 25px;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+}
+
+
+#sign-up .right {
+    background-image: url(images/register-2819608_1920.jpg);
+    background-size: cover;
+    border: 2px solid black;
+}
+#sign-up .left {
+    background:linear-gradient(-45deg, #0575E6, #43C6AC);
+}
+
+/* ********************** */
+/* animation testing */
+
+/*
+.come-in {
+  transform: translatex(-800px);
+  animation: come-in 0.8s ease forwards;
+}
+
+.come-in {
+  transform: translatex(-800px);
+  animation: come-in 0.8s ease forwards;
+}
+}
+@keyframes come-in {
+  to { transform: translateY(0); }
+}
+*/
+
+
+/* ******************* */
+/* OLD BUTTON CSS - TO BE USED AND ALTERED!!!*/
+/* ******************* */
+
+/*
+.regularbutton {
+    
+    border: 5px solid black;
+    border-radius: 25px;
+    padding: 5px;
+    background:linear-gradient(-45deg, rgb(41, 76, 87), rgb(208, 192, 132));
+    color: white;
+    width: 200px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.regularbutton:hover {
+    background: black;
+    cursor:pointer;
+}
+*/

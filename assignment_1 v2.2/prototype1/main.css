@@ -1,0 +1,131 @@
+
+/* ******************* */
+/* sitewide CSS        */
+/* ******************* */
+
+
+body {
+    margin: 0;
+    border:0;
+}
+
+/* ******************* */
+/* header              */
+/* ******************* */
+
+#banner {
+    margin: 40px auto;
+}
+
+
+/* ******************* */
+/* Navigiation         */
+/* ******************* */
+
+nav{
+    background: black;
+}
+
+#sitenav a {
+    text-decoration: none;
+    color: white;
+    padding: inherit;
+    
+}
+
+#sitenav ul {
+    background: black;
+    padding: 15px;
+    margin:0;
+}
+#sitenav ul li {
+    padding: 15px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    display: inline;
+}
+
+/* selecting the hover for all the buttons but not the form for searching the site */
+#sitenav ul li:hover {
+    background: rgb(43, 78, 89);
+    color:white;
+    cursor:pointer;
+}
+
+form {
+    padding: 15px;
+    float: right;
+
+}
+#search {
+    border-radius: 25px;
+    border-style: solid;
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* ******************* */
+/* staff photo section */
+/* ******************* */
+#staff img {
+    
+    border: 2px solid rgb(90, 111, 100);
+    border-radius: 25px;
+    max-width: 200px;
+}
+
+/* used to centre the images in staff on homepage */
+.middlecontent {
+    text-align: center;
+}
+
+/* used to give a gradient colour as a background to the staff section */
+/* source : https://www.w3schools.com/css/css3_gradients.asp */
+
+#staff {
+    
+    background: rgb(205, 199, 204);
+    padding: 50px;
+}
+
+
+
+/* ******************* */
+/* signup section      */
+/* ******************* */
+
+#signup {
+    background: linear-gradient(-40deg, rgb(41, 76, 87), rgb(208, 192, 132));
+    padding: 100px;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+.regularbutton {
+    
+    border: 5px solid black;
+    border-radius: 25px;
+    padding: 5px;
+    margin: auto;
+    background:linear-gradient(-45deg, rgb(41, 76, 87), rgb(208, 192, 132));
+    color: white;
+    width: 200px;
+    display: block;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+.regularbutton:hover {
+    background: black;
+    cursor:pointer;
+}

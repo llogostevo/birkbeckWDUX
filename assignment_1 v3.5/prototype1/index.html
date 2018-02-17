@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="gridlayout.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    
+    <title>Silicon Hack | Home Page</title>
+</head>
+<body>
+   
+   <div id="pagegrid" >
+        <header>
+           <nav id="currentuser">
+               <ul>
+                  <!--there is an issue with having the li's on different lines, it causes a slight gap with the content  -->
+                   <li><a href="currentstudent.html">Current Students</a></li><!--
+                   --><li><a href="currentstaff.html">Current Staff</a></li>
+               </ul>
+           </nav>
+            <div id="banner">
+               <a href="index.html"><img  src="images/logobanner.png" alt="home"></a>
+            </div>
+            <nav id="sitenav">
+                <div>
+                    <ul>
+                       
+                        <li><a href="#">Home</a></li><!--
+                        --><li><a href="#news">News &amp; Events</a></li><!--
+                        --><li><a href="curriculum.html">Curriculum</a></li><!--
+                        --><li><a href="#.html">Page 3?</a></li><!--
+                        --><li><a href="#.html">Page 4?</a></li><!--
+                        --><li><a href="about_us.html">About Us</a></li>
+                    </ul>
+                </div>
+                <!-- this might need to be a standalone id, at the moment I am thinking the call to action button will be the same on every page -->
+                <div id="signup">
+                    <ul>
+                        <li><a href="#">Sign Up</a></li>
+                    </ul>
+                    </div>
+            </nav>
+        </header>
+
+        <section id="siteintro">
+            <h1 class="come-in">Silicon Hack</h1>
+            <strong class="come-in">No Ordinary Provision</strong>
+            <em class="come-in">---- Here you will learn how to thrive in the Tech Industry ----</em>
+        </section>
+        
+        <section id="about">
+            <div>
+                <h1>About Us</h1>
+            </div>
+            <div id="staff">
+                <div class="staff-image">
+                     <img src="images/lloyd.png" alt="Mr Stevens">
+                      <div class="staff-text">Lloyd Stevens | Assistant Principal</div>
+                </div>
+                <div class="staff-image">
+                <img src="images/jaime.png" alt="Mr Vega">
+                <div class="staff-text">Mr Vega | Classroom Teacher</div>
+                </div>
+
+                <div class="staff-image">
+                <img src="images/leila.png" alt="Mr Lau">
+                <div class="staff-text">Mr Lau | Lead KS4</div>
+                </div>
+                <div class="staff-image"><img src="images/leila.png" alt="Miss Lassami">
+                <div class="staff-text">Ms Lassami | 2ic ICT</div>
+                </div>
+               <div class="staff-image">
+                 <img src="images/gavin.png" alt="Mr Tong">
+                 <div class="staff-text">Mr Tong | HoY 10
+                 </div>
+                </div>
+                <div id="map">
+                    <div id="map-iframe"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.3404489716777!2d-0.08795298455392069!3d51.52531521721466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761caf7fc3b1a3%3A0xa694993aa28565fa!2sCentral+Foundation+Boys%E2%80%99+School!5e0!3m2!1sen!2suk!4v1512336125758" ></iframe></div>
+                    <div class="staff-text">Where are we?</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- use news label later to apply some identification of the type of news -->
+        <!-- need to target the text and give it appropriate colours -->
+        <!-- need to retarget using divs so that only the bacgkround image appears opaque, this will require messing around again with the grid layout -->
+        
+        <!-- add in some content about the school -->
+        <!-- create a form that allows a sign up -->
+        <!-- add in feedback on the image of each person to take for more information -->
+        <!-- decide on the other page??? could it be a news story? so a basic page with more content on that shows text and layout. 3 columns using grid layout and detail to support a variety of images that relate to the sales force trip. a call to action on this page -->
+        <!-- then do the write up for the other part... if time go back and do an animation page -->
+        
+        
+    
+        <section id="news">
+                <div id="item0">
+                   <h1>Latest News</h1>
+                </div>
+
+                <div id="item1" class="newsgrid">
+                   <div class="newsitem" >
+                       <h1>Salesforce Trip</h1>
+                       <div class="newslabel">Trip</div>
+                    </div>
+                    <div class="newsbutton">
+                        <a href="#">See more</a>
+                    </div> 
+                </div>
+
+                <div id="item2" class="newsgrid">
+                   <div class="newsitem">
+                       <h1>Student Mobile Apps</h1>
+                       <div class="newslabel">Student Showcase</div>
+                    </div>
+                    <div class="newsbutton">
+                        <a href="#">See more</a>
+                    </div>
+                </div>
+
+                <div id="item3" class="newsgrid">
+                   <div class="newsitem">
+                       <h1>Student Web Apps</h1>
+                       <div class="newslabel">Trip</div>
+                    </div>
+                    <div class="newsbutton">
+                        <a href="#">See more</a>
+                    </div>
+                </div>
+
+                <div id="item4" class="newsgrid">
+                   <div class="newsitem">
+                       <h1>New London Architecture Trip</h1>
+                        <div class="newslabel">Trip</div>
+                    </div>
+                    <div class="newsbutton">
+                        <a href="#">See more</a>
+                    </div>
+                </div>
+
+                <!-- can this automate to be a full row if its tagged as a main news?? only if time -->
+                <div id="item5" class="newsgrid">
+                    <div class="newsitem">
+                        <h1>Trip to Google</h1>
+                        <div class="newslabel">Trip</div>
+                    </div>
+                    <img id="google" src="images/Google_2015_logo.svg" alt="google">
+                    <div class="newsbutton">
+                        <a href="#">See more</a>
+                    </div>
+                </div>
+
+                <div id="item6" class="newsgrid">
+                   <div class="newsitem">
+                       <h1>Hopster Trip</h1>
+                       <div class="newslabel">Trip</div>
+                    </div>
+                    <div class="newsbutton">
+                        <a href="#">See more</a>
+                    </div>
+                </div>
+
+                <div id="item7" class="newsgrid">
+                   <div class="newsitem">
+                       <h1>Amazon Trip</h1>
+                       <div class="newslabel">Trip</div>
+                    </div>
+                    <div class="newsbutton">
+                        <a href="#">See more</a>
+                    </div>
+                </div>
+
+                <div id="item8" class="newsgrid">
+                   <div class="newsitem">
+                       <h1>Mentoring</h1>
+                       <div class="newslabel">Activities</div>
+                    </div>
+                    <div class="newsbutton">
+                        <a href="#">See more</a>
+                    </div>   
+                </div>
+        </section>
+        <section id="sign-up">
+            <aside class="left">
+                <h1>Applications for entry in September 2018</h1>
+
+                <p>Applications for students wishing to join Silicon Hack in September 2018 will open at 12 noon on Monday 2nd October 2017 and can be submitted by completing the form below.</p>
+
+                <p>The deadline for submissions is at the end of the day on Friday 26th January 2018.</p>
+
+                <p>After you have submitted your application you will receive a message confirming that it has been successful.</p>
+
+                <p>In February 2018 you will be invited to attend an interview where you can alter your course choices and discuss the suitability of the various courses on offer.</p>
+
+                <p>Conditional and un-conditional offers will then be given towards the end of the Spring term.</p>
+
+
+            </aside>
+            
+            <!-- in here make the form display in two columns and then flip to one column at a certain size -->
+            <aside class="right">
+                 <form id="sign-up-form" action="#">
+                 <div>
+                     <label for="signuplist">Contact Type:</label>
+                 </div>
+                  <div>
+                      <input id="signuplist" list="options">
+                  </div>
+                  
+                  <div>
+                      <datalist id="options">
+                        <option value="Sign up for the mailing list">
+                        <option value="Sign up for an Event">
+                        <option value="Register Enrolment interest">
+                        <option value="Another Query">
+                      </datalist>
+                  </div>
+                  
+                  <div>
+                      <label for="firstname">First name:</label>
+                  </div>
+                  <div>
+                      <input type="text" name="firstname">
+                  </div>
+                  
+                  <div>
+                      <label for="lastname">Last name:</label>
+                  </div>
+                  
+                  <div>
+                      <input id="lastname" type="text" name="lastname">
+                  </div>
+                  
+                  <div>
+                      <label for="dob">DOB:</label>
+                  </div>
+                  
+                  <div>
+                      <input id="dob" type="date" name="dob">
+                  </div>
+                  
+                </form>
+            </aside>
+        </section>
+       
+            <footer>
+            <div id="sitemap">
+                <p>site map in here</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

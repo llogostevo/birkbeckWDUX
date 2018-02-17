@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="gridlayout.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    
+    <title>Silicon Hack | Home Page</title>
+</head>
+<body>
+   
+   <!-- Need to apply grid layout to the whole page as a structure-->
+    <header>
+       <nav id="currentuser">
+           <ul>
+              <!--there is an issue with having the li's on different lines, it causes a slight gap with the content  -->
+               <li><a href="currentstudent.html">Current Students</a></li><!--
+               --><li><a href="currentstaff.html">Current Staff</a></li>
+           </ul>
+       </nav>
+        <div id="banner">
+           <a href="index.html"><img  src="images/logobanner.png" alt="home"></a>
+        </div>
+        <nav id="sitenav">
+            <div>
+                <ul>
+                    <li><a href="#">Home</a></li><!--
+                    --><li><a href="events.html">News &amp; Events</a></li><!--
+                    --><li><a href="curriculum.html">Curriculum</a></li><!--
+                    --><li><a href="#.html">Page 3?</a></li><!--
+                    --><li><a href="#.html">Page 4?</a></li><!--
+                    --><li><a href="about_us.html">About Us</a></li>
+                </ul>
+            </div>
+            <!-- this might need to be a standalone id, at the moment I am thinking the call to action button will be the same on every page -->
+            <div id="signup">
+                <ul>
+                    <li><a href="#">Sign Up</a></li>
+                </ul>
+                </div>
+        </nav>
+    </header>
+    
+    <section id="siteintro">
+        <h1>Silicon Hack</h1>
+        <strong>No Ordinary Provision</strong>
+        <em>---- Here you will learn how to thrive in the Tech Industry ----</em>
+    </section>
+    
+    <!-- use news label later to apply some identification of the type of news -->
+    <!-- need to target the text and give it appropriate colours -->
+    <!-- need to retarget using divs so that only the bacgkround image appears opaque, this will require messing around again with the grid layout -->
+    
+    <section id="news">
+            <div id="item0">
+               <h1>Latest News</h1>
+            </div>
+            
+            <div id="item1" class="newsgrid">
+               <div class="newsitem" >
+                   <h1>Salesforce Trip</h1>
+                   <div class="newslabel">Trip</div>
+                </div>
+                <div class="newsbutton">
+                    <a href="#">See more</a>
+                </div> 
+            </div>
+
+            <div id="item2" class="newsgrid">
+               <div class="newsitem">
+                   <h1>Student Mobile Apps</h1>
+                   <div class="newslabel">Student Showcase</div>
+                </div>
+                <div class="newsbutton">
+                    <a href="#">See more</a>
+                </div>
+            </div>
+
+            <div id="item3" class="newsgrid">
+               <div class="newsitem">
+                   <h1>Student Web Apps</h1>
+                   <div class="newslabel">Trip</div>
+                </div>
+                <div class="newsbutton">
+                    <a href="#">See more</a>
+                </div>
+            </div>
+
+            <div id="item4" class="newsgrid">
+               <div class="newsitem">
+                   <h1>New London Architecture Trip</h1>
+                    <div class="newslabel">Trip</div>
+                </div>
+                <div class="newsbutton">
+                    <a href="#">See more</a>
+                </div>
+            </div>
+
+            <!-- can this automate to be a full row if its tagged as a main news?? only if time -->
+            <div id="item5" class="newsgrid">
+                <div class="newsitem">
+                    <h1>Trip to Google</h1>
+                    <div class="newslabel">Trip</div>
+                </div>
+                <img id="google" src="images/Google_2015_logo.svg" alt="google">
+                <div class="newsbutton">
+                    <a href="#">See more</a>
+                </div>
+            </div>
+
+            <div id="item6" class="newsgrid">
+               <div class="newsitem">
+                   <h1>Hopster Trip</h1>
+                   <div class="newslabel">Trip</div>
+                </div>
+                <div class="newsbutton">
+                    <a href="#">See more</a>
+                </div>
+            </div>
+
+            <div id="item7" class="newsgrid">
+               <div class="newsitem">
+                   <h1>Amazon Trip</h1>
+                   <div class="newslabel">Trip</div>
+                </div>
+                <div class="newsbutton">
+                    <a href="#">See more</a>
+                </div>
+            </div>
+
+            <div id="item8" class="newsgrid">
+               <div class="newsitem">
+                   <h1>Mentoring</h1>
+                   <div class="newslabel">Activities</div>
+                </div>
+                <div class="newsbutton">
+                    <a href="#">See more</a>
+                </div>   
+            </div>
+    </section>
+    
+    <footer>
+        <div id="sitemap">
+            <p>site map in here</p>
+        </div>
+    </footer>
+</body>
+</html>

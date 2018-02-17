@@ -1,0 +1,65 @@
+
+
+
+/* staff photo section */
+
+#staff
+{
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+#staff img {
+    
+    border-radius: 25px;
+    width: 200px;
+}
+
+/* added a new div and inlines.. not worked */
+.divinline {
+    margin: 0 auto;
+    display: inline-block;
+}
+
+
+.grad_grey_black {
+  background: black; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(-45deg, black, white); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(-45deg, black, white); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(-45deg, black, white); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(-45deg, white, black); /* Standard syntax */
+}
+
+
+
+/* signup section */
+#signup {
+    background-image: url(images/darktolightimage.png);
+    padding: 100px;
+    border:0;
+}
+
+.regularbutton {
+    
+    border: 5px solid black;
+    border-radius: 25px;
+    padding: 5px;
+    margin: auto;
+    background-image: url(images/darktolightimage.png);
+    color: white;
+    width: 200px;
+    display: block;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+.regularbutton:hover {
+    
+    border: 5px solid black;
+    border-radius: 25px;
+    background: black;
+    color:white;
+    cursor:pointer;
+}
